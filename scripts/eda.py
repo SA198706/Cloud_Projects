@@ -90,7 +90,8 @@ def run_eda(df_clean: pd.DataFrame) -> dict:
 
     # Bivariate: dti vs default (boxplot)
     plt.figure(figsize=(6, 4))
-    sns.boxplot(data=df_clean, x='default', y='dti', palette=['#4C72B0', '#C44E52'])
+    sns.boxplot(data=df_clean, x='default', y='dti', hue='default',
+                palette=['#4C72B0', '#C44E52'], legend=False)
     plt.title('Debt-to-Income Ratio by Default Status')
     plt.tight_layout(); plt.savefig(f'{PLOTS_DIR}/05_dti_by_default.png'); plt.close()
 

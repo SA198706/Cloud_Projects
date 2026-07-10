@@ -109,7 +109,7 @@ if __name__ == "__main__":
     print("Press Ctrl+C to stop the server.\n")
 
     loan_default_ml_pipeline.serve(
-        name="loan-default-ml-deployment",
+        name="loan-default-ml-pipeline-v2",
         cron="*/2 * * * *",
         tags=["loan", "mlops", "aimlczg549"],
     )

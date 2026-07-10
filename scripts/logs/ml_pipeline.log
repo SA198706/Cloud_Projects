@@ -214,3 +214,291 @@
 2026-07-10 10:17:47,385 | INFO | ======================================================================
 2026-07-10 10:17:47,385 | INFO | Machine Learning Pipeline Completed
 2026-07-10 10:17:47,385 | INFO | ======================================================================
+2026-07-10 10:18:35,850 | INFO | ======================================================================
+2026-07-10 10:18:35,851 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:18:35,851 | INFO | ======================================================================
+2026-07-10 10:18:35,851 | INFO | Training models...
+2026-07-10 10:19:46,733 | INFO | Training completed successfully.
+2026-07-10 10:19:46,734 | INFO | Training Rows : 35000
+2026-07-10 10:19:46,734 | INFO | Testing Rows : 15000
+2026-07-10 10:19:46,734 | INFO | Evaluating models...
+2026-07-10 10:19:46,904 | INFO | Evaluation completed.
+2026-07-10 10:19:46,904 | INFO | Best Model : Logistic Regression
+2026-07-10 10:19:46,904 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:18:35.850814",
+    "completed_at": "2026-07-10T10:19:46.904624",
+    "duration_seconds": 71.05,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:19:46,904 | INFO | ======================================================================
+2026-07-10 10:19:46,905 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:19:46,905 | INFO | ======================================================================
+2026-07-10 10:20:37,897 | INFO | ======================================================================
+2026-07-10 10:20:37,897 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:20:37,898 | INFO | ======================================================================
+2026-07-10 10:20:37,898 | INFO | Training models...
+2026-07-10 10:21:50,072 | INFO | Training completed successfully.
+2026-07-10 10:21:50,072 | INFO | Training Rows : 35000
+2026-07-10 10:21:50,072 | INFO | Testing Rows : 15000
+2026-07-10 10:21:50,072 | INFO | Evaluating models...
+2026-07-10 10:21:50,248 | INFO | Evaluation completed.
+2026-07-10 10:21:50,249 | INFO | Best Model : Logistic Regression
+2026-07-10 10:21:50,249 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:20:37.897348",
+    "completed_at": "2026-07-10T10:21:50.249241",
+    "duration_seconds": 72.35,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:21:50,249 | INFO | ======================================================================
+2026-07-10 10:21:50,249 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:21:50,249 | INFO | ======================================================================
+2026-07-10 10:22:33,653 | INFO | ======================================================================
+2026-07-10 10:22:33,653 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:22:33,653 | INFO | ======================================================================
+2026-07-10 10:22:33,654 | INFO | Training models...
+2026-07-10 10:23:45,619 | INFO | Training completed successfully.
+2026-07-10 10:23:45,620 | INFO | Training Rows : 35000
+2026-07-10 10:23:45,620 | INFO | Testing Rows : 15000
+2026-07-10 10:23:45,620 | INFO | Evaluating models...
+2026-07-10 10:23:45,798 | INFO | Evaluation completed.
+2026-07-10 10:23:45,798 | INFO | Best Model : Logistic Regression
+2026-07-10 10:23:45,798 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:22:33.653132",
+    "completed_at": "2026-07-10T10:23:45.798559",
+    "duration_seconds": 72.15,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:23:45,798 | INFO | ======================================================================
+2026-07-10 10:23:45,798 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:23:45,799 | INFO | ======================================================================
+2026-07-10 10:24:33,050 | INFO | ======================================================================
+2026-07-10 10:24:33,050 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:24:33,051 | INFO | ======================================================================
+2026-07-10 10:24:33,051 | INFO | Training models...
+2026-07-10 10:25:42,861 | INFO | Training completed successfully.
+2026-07-10 10:25:42,862 | INFO | Training Rows : 35000
+2026-07-10 10:25:42,862 | INFO | Testing Rows : 15000
+2026-07-10 10:25:42,862 | INFO | Evaluating models...
+2026-07-10 10:25:43,034 | INFO | Evaluation completed.
+2026-07-10 10:25:43,034 | INFO | Best Model : Logistic Regression
+2026-07-10 10:25:43,034 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:24:33.050375",
+    "completed_at": "2026-07-10T10:25:43.034616",
+    "duration_seconds": 69.98,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:25:43,034 | INFO | ======================================================================
+2026-07-10 10:25:43,035 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:25:43,035 | INFO | ======================================================================
+2026-07-10 10:26:31,388 | INFO | ======================================================================
+2026-07-10 10:26:31,388 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:26:31,389 | INFO | ======================================================================
+2026-07-10 10:26:31,389 | INFO | Training models...
+2026-07-10 10:27:41,298 | INFO | Training completed successfully.
+2026-07-10 10:27:41,299 | INFO | Training Rows : 35000
+2026-07-10 10:27:41,299 | INFO | Testing Rows : 15000
+2026-07-10 10:27:41,299 | INFO | Evaluating models...
+2026-07-10 10:27:41,477 | INFO | Evaluation completed.
+2026-07-10 10:27:41,477 | INFO | Best Model : Logistic Regression
+2026-07-10 10:27:41,477 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:26:31.388222",
+    "completed_at": "2026-07-10T10:27:41.477439",
+    "duration_seconds": 70.09,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:27:41,477 | INFO | ======================================================================
+2026-07-10 10:27:41,477 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:27:41,477 | INFO | ======================================================================
+2026-07-10 10:28:28,218 | INFO | ======================================================================
+2026-07-10 10:28:28,218 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:28:28,218 | INFO | ======================================================================
+2026-07-10 10:28:28,218 | INFO | Training models...
+2026-07-10 10:29:39,020 | INFO | Training completed successfully.
+2026-07-10 10:29:39,020 | INFO | Training Rows : 35000
+2026-07-10 10:29:39,021 | INFO | Testing Rows : 15000
+2026-07-10 10:29:39,021 | INFO | Evaluating models...
+2026-07-10 10:29:39,228 | INFO | Evaluation completed.
+2026-07-10 10:29:39,228 | INFO | Best Model : Logistic Regression
+2026-07-10 10:29:39,228 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:28:28.218200",
+    "completed_at": "2026-07-10T10:29:39.228939",
+    "duration_seconds": 71.01,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:29:39,229 | INFO | ======================================================================
+2026-07-10 10:29:39,229 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:29:39,229 | INFO | ======================================================================
+2026-07-10 10:30:40,896 | INFO | ======================================================================
+2026-07-10 10:30:40,896 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:30:40,897 | INFO | ======================================================================
+2026-07-10 10:30:40,897 | INFO | Training models...
+2026-07-10 10:31:50,755 | INFO | Training completed successfully.
+2026-07-10 10:31:50,756 | INFO | Training Rows : 35000
+2026-07-10 10:31:50,757 | INFO | Testing Rows : 15000
+2026-07-10 10:31:50,757 | INFO | Evaluating models...
+2026-07-10 10:31:50,929 | INFO | Evaluation completed.
+2026-07-10 10:31:50,929 | INFO | Best Model : Logistic Regression
+2026-07-10 10:31:50,929 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:30:40.896423",
+    "completed_at": "2026-07-10T10:31:50.929451",
+    "duration_seconds": 70.03,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:31:50,929 | INFO | ======================================================================
+2026-07-10 10:31:50,929 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:31:50,929 | INFO | ======================================================================
+2026-07-10 10:32:36,011 | INFO | ======================================================================
+2026-07-10 10:32:36,011 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:32:36,011 | INFO | ======================================================================
+2026-07-10 10:32:36,011 | INFO | Training models...
+2026-07-10 10:33:47,999 | INFO | Training completed successfully.
+2026-07-10 10:33:47,999 | INFO | Training Rows : 35000
+2026-07-10 10:33:47,999 | INFO | Testing Rows : 15000
+2026-07-10 10:33:47,999 | INFO | Evaluating models...
+2026-07-10 10:33:48,175 | INFO | Evaluation completed.
+2026-07-10 10:33:48,175 | INFO | Best Model : Logistic Regression
+2026-07-10 10:33:48,176 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:32:36.011001",
+    "completed_at": "2026-07-10T10:33:48.176001",
+    "duration_seconds": 72.17,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:33:48,176 | INFO | ======================================================================
+2026-07-10 10:33:48,176 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:33:48,176 | INFO | ======================================================================
+2026-07-10 10:34:35,103 | INFO | ======================================================================
+2026-07-10 10:34:35,104 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:34:35,104 | INFO | ======================================================================
+2026-07-10 10:34:35,104 | INFO | Training models...
+2026-07-10 10:35:46,072 | INFO | Training completed successfully.
+2026-07-10 10:35:46,072 | INFO | Training Rows : 35000
+2026-07-10 10:35:46,072 | INFO | Testing Rows : 15000
+2026-07-10 10:35:46,072 | INFO | Evaluating models...
+2026-07-10 10:35:46,248 | INFO | Evaluation completed.
+2026-07-10 10:35:46,248 | INFO | Best Model : Logistic Regression
+2026-07-10 10:35:46,249 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:34:35.103934",
+    "completed_at": "2026-07-10T10:35:46.249043",
+    "duration_seconds": 71.15,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:35:46,249 | INFO | ======================================================================
+2026-07-10 10:35:46,249 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:35:46,249 | INFO | ======================================================================
+2026-07-10 10:36:33,614 | INFO | ======================================================================
+2026-07-10 10:36:33,614 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:36:33,614 | INFO | ======================================================================
+2026-07-10 10:36:33,615 | INFO | Training models...
+2026-07-10 10:37:44,345 | INFO | Training completed successfully.
+2026-07-10 10:37:44,346 | INFO | Training Rows : 35000
+2026-07-10 10:37:44,346 | INFO | Testing Rows : 15000
+2026-07-10 10:37:44,346 | INFO | Evaluating models...
+2026-07-10 10:37:44,521 | INFO | Evaluation completed.
+2026-07-10 10:37:44,521 | INFO | Best Model : Logistic Regression
+2026-07-10 10:37:44,522 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:36:33.614069",
+    "completed_at": "2026-07-10T10:37:44.522033",
+    "duration_seconds": 70.91,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:37:44,522 | INFO | ======================================================================
+2026-07-10 10:37:44,522 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:37:44,522 | INFO | ======================================================================
+2026-07-10 10:38:37,080 | INFO | ======================================================================
+2026-07-10 10:38:37,081 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:38:37,081 | INFO | ======================================================================
+2026-07-10 10:38:37,081 | INFO | Training models...
+2026-07-10 10:39:48,402 | INFO | Training completed successfully.
+2026-07-10 10:39:48,403 | INFO | Training Rows : 35000
+2026-07-10 10:39:48,403 | INFO | Testing Rows : 15000
+2026-07-10 10:39:48,403 | INFO | Evaluating models...
+2026-07-10 10:39:48,596 | INFO | Evaluation completed.
+2026-07-10 10:39:48,596 | INFO | Best Model : Logistic Regression
+2026-07-10 10:39:48,596 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:38:37.080551",
+    "completed_at": "2026-07-10T10:39:48.596582",
+    "duration_seconds": 71.52,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:39:48,596 | INFO | ======================================================================
+2026-07-10 10:39:48,597 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:39:48,597 | INFO | ======================================================================
+2026-07-10 10:40:34,554 | INFO | ======================================================================
+2026-07-10 10:40:34,554 | INFO | Machine Learning Pipeline Started
+2026-07-10 10:40:34,554 | INFO | ======================================================================
+2026-07-10 10:40:34,555 | INFO | Training models...
+2026-07-10 10:41:45,747 | INFO | Training completed successfully.
+2026-07-10 10:41:45,748 | INFO | Training Rows : 35000
+2026-07-10 10:41:45,748 | INFO | Testing Rows : 15000
+2026-07-10 10:41:45,748 | INFO | Evaluating models...
+2026-07-10 10:41:45,929 | INFO | Evaluation completed.
+2026-07-10 10:41:45,930 | INFO | Best Model : Logistic Regression
+2026-07-10 10:41:45,930 | INFO | {
+    "pipeline_status": "SUCCESS",
+    "started_at": "2026-07-10T10:40:34.554242",
+    "completed_at": "2026-07-10T10:41:45.930334",
+    "duration_seconds": 71.38,
+    "training_rows": 35000,
+    "testing_rows": 15000,
+    "best_model": "Logistic Regression",
+    "logistic_accuracy": 0.799,
+    "random_forest_accuracy": 0.6735
+}
+2026-07-10 10:41:45,930 | INFO | ======================================================================
+2026-07-10 10:41:45,930 | INFO | Machine Learning Pipeline Completed
+2026-07-10 10:41:45,930 | INFO | ======================================================================

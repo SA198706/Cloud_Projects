@@ -1,0 +1,1 @@
+{"run_id": 1, "timestamp_utc": "2026-07-10T18:28:02.252791+00:00", "status": "FAILED", "duration_sec": 0.0, "error": "No dataset found. Place loan.csv in the data/ folder."}

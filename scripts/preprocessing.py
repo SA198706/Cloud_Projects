@@ -28,15 +28,48 @@ PAID_STATUSES = ['Fully Paid',
                   'Does not meet the credit policy. Status:Fully Paid']
 
 
-def load_data(path='../data/loan_data_raw.csv'):
+def load_data(path=None, sample_n=50_000, random_state=42):
+    """
+    Load and filter the Lending Club loan dataset.
+
+    Searches for loan.csv first (the real Kaggle download), then
+    falls back to loan_data_raw.csv (synthetic / renamed file).
+
+    sample_n: stratified sample size drawn after filtering.
+              Set to None to use the full filtered dataset.
+    """
+    from pathlib import Path
+
+    if path is None:
+        base = Path(__file__).resolve().parent.parent / 'data'
+        for name in ('loan.csv', 'loan_data_raw.csv'):
+            candidate = base / name
+            if candidate.exists():
+                path = str(candidate)
+                break
+        if path is None:
+            raise FileNotFoundError(
+                'No dataset found. Place loan.csv in the data/ folder.'
+            )
+
     df = pd.read_csv(path, low_memory=False)
     df = df[df['loan_status'].isin(DEFAULT_STATUSES + PAID_STATUSES)].copy()
     df['default'] = df['loan_status'].isin(DEFAULT_STATUSES).astype(int)
+
+    if sample_n is not None and len(df) > sample_n:
+        default_rate = df['default'].mean()
+        n1 = int(sample_n * default_rate)
+        n0 = sample_n - n1
+        df = pd.concat([
+            df[df['default'] == 1].sample(n=n1, random_state=random_state),
+            df[df['default'] == 0].sample(n=n0, random_state=random_state),
+        ]).reset_index(drop=True)
+
     # emp_length: "< 1 year" -> 0, "10+ years" -> 10, "3 years" -> 3, NaN stays NaN
     df['emp_length'] = (df['emp_length']
                          .str.extract(r'(\d+)')[0]
                          .astype(float))
-    # term: "36 months" -> 36
+    # term: " 36 months" or "36 months" -> 36
     df['term'] = df['term'].astype(str).str.extract(r'(\d+)')[0].astype(float)
     keep_cols = NUMERIC_COLS + CATEGORICAL_COLS + ['default']
     return df[[c for c in keep_cols if c in df.columns]]

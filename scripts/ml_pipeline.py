@@ -105,7 +105,7 @@ def run_ml_pipeline():
 
         logger.info("Evaluating models...")
 
-        monitoring_output = monitor_models()
+        monitoring_output = monitor_models(training_output)
 
         logger.info("Evaluation completed.")
 

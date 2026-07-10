@@ -161,12 +161,14 @@ def compare_models(logistic_metrics, rf_metrics):
 # ---------------------------------------------------------------------
 
 
-def monitor_models():
+def monitor_models(training_output=None):
     """
-    Complete Monitoring Pipeline
+    Complete Monitoring Pipeline.
+    Pass a pre-trained training_output dict to skip re-training.
     """
 
-    training_output = train_models()
+    if training_output is None:
+        training_output = train_models()
 
     logistic_model = training_output["logistic_model"]
 

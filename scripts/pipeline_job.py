@@ -10,10 +10,12 @@ import time
 import logging
 from datetime import datetime, timezone
 
+from pathlib import Path
 from preprocessing import load_data, preprocess
 from eda import run_eda
 
-LOG_DIR = '/home/claude/loan_pipeline/logs'
+LOG_DIR = str(Path(__file__).resolve().parent.parent / "logs")
+Path(LOG_DIR).mkdir(parents=True, exist_ok=True)
 JSONL_LOG = f'{LOG_DIR}/pipeline_log.jsonl'
 TEXT_LOG = f'{LOG_DIR}/pipeline.log'
 

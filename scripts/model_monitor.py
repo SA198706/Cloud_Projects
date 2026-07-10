@@ -134,8 +134,20 @@ def save_metrics(metrics):
 
 
 def compare_models(logistic_metrics, rf_metrics):
+    """
+    Select the best model by ROC-AUC score (falls back to F1 if AUC
+    is identical). Raw accuracy is misleading on the imbalanced loan
+    dataset (~80 % majority class), so we prefer AUC.
+    """
+    lr_score = logistic_metrics["roc_auc"]
+    rf_score = rf_metrics["roc_auc"]
 
-    if rf_metrics["accuracy"] >= logistic_metrics["accuracy"]:
+    # If AUC scores are tied (rare), break the tie with F1.
+    if lr_score == rf_score:
+        lr_score = logistic_metrics["f1_score"]
+        rf_score = rf_metrics["f1_score"]
+
+    if rf_score >= lr_score:
 
         best = "Random Forest"
 
@@ -161,12 +173,14 @@ def compare_models(logistic_metrics, rf_metrics):
 # ---------------------------------------------------------------------
 
 
-def monitor_models():
+def monitor_models(training_output=None):
     """
-    Complete Monitoring Pipeline
+    Complete Monitoring Pipeline.
+    Pass a pre-trained training_output dict to skip re-training.
     """
 
-    training_output = train_models()
+    if training_output is None:
+        training_output = train_models()
 
     logistic_model = training_output["logistic_model"]
 

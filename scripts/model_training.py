@@ -59,10 +59,17 @@ PREPROCESSOR_FILE = MODEL_DIR / "preprocessor.pkl"
 def prepare_training_data():
     """
     Loads and preprocesses the Lending Club dataset.
+    Drops the *_scaled columns added by preprocessing.py to avoid
+    data leakage (those are normalised copies of the raw numeric
+    columns already present in X; keeping both would inflate CV scores).
     """
     raw_df = load_data()
     result = preprocess(raw_df)
     df = result["df_clean"]
+    # Drop StandardScaler duplicates (*_scaled) – the pipeline's own
+    # ColumnTransformer will handle scaling internally.
+    scaled_cols = [c for c in df.columns if c.endswith("_scaled")]
+    df = df.drop(columns=scaled_cols)
     X = df.drop(columns=["default"])
     y = df["default"]
     return X, y
@@ -137,7 +144,8 @@ def train_logistic_regression(
             (
                 "classifier",
                 LogisticRegression(
-                    max_iter=1000,
+                    max_iter=10000,
+                    solver='saga',
                     random_state=42,
                 ),
             ),

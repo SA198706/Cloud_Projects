@@ -1,5 +1,8 @@
 __pycache__/
 .DS_Store
 data/*.zip
+data/loan.csv
+scripts/models/*.pkl
+
 
 

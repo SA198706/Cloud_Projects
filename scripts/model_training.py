@@ -137,7 +137,8 @@ def train_logistic_regression(
             (
                 "classifier",
                 LogisticRegression(
-                    max_iter=1000,
+                    max_iter=5000,
+                    solver='saga',
                     random_state=42,
                 ),
             ),

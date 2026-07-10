@@ -7,6 +7,7 @@ Sub-Objective 1.4: Exploratory Data Analysis
 - Feature importance (via RandomForest)
 - Visualizations (univariate + bivariate)
 """
+from pathlib import Path
 import pandas as pd
 import numpy as np
 import matplotlib
@@ -18,7 +19,7 @@ from sklearn.preprocessing import LabelEncoder
 
 from preprocessing import load_data, preprocess, NUMERIC_COLS, CATEGORICAL_COLS
 
-PLOTS_DIR = '/Users/sara/Documents/Projects/Assignments/API/loan_default_pipeline/plots'
+PLOTS_DIR = str(Path(__file__).resolve().parent.parent / "plots")
 
 
 def run_eda(df_clean: pd.DataFrame) -> dict:

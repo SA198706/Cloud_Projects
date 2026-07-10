@@ -266,19 +266,21 @@ def loan_default_ml_pipeline():
 
 
 # --------------------------------------------------------------------
-# Local Execution
+# Entry point
 # --------------------------------------------------------------------
 
 if __name__ == "__main__":
+    import sys
 
-    # Local Run
-    loan_default_ml_pipeline()
-
-    # ---------------------------------------------------------
-    # Uncomment below for Prefect Deployment
-    # ---------------------------------------------------------
-
-    # loan_default_ml_pipeline.serve(
-    #     name="loan-default-ml-deployment",
-    #     cron="*/2 * * * *",
-    # )
+    if "--serve" in sys.argv:
+        # Deploy to Prefect Cloud with a 2-minute cron schedule.
+        # Requires: prefect cloud login (run once first)
+        # Keep this process running — it polls for scheduled work.
+        loan_default_ml_pipeline.serve(
+            name="loan-default-ml-deployment",
+            cron="*/2 * * * *",
+            tags=["loan", "mlops", "aimlczg549"],
+        )
+    else:
+        # One-off local run (no deployment)
+        loan_default_ml_pipeline()

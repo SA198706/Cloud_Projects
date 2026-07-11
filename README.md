@@ -224,8 +224,9 @@ See `scripts/api_access/README.md` for full setup instructions.
 ---
 **Step-by-step instructions:**
 Step 1 — Activate the venv
+
 Plain Text
-cd <Your Project Directory Path> venv/bin/activate
+cd Your Project Directory Path venv/bin/activate
  
 Step 2 — Log in to Prefect Cloud (one-time only)
 Plain Text

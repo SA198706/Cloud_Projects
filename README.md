@@ -222,7 +222,22 @@ of the most recent flow runs with state and start time.
 See `scripts/api_access/README.md` for full setup instructions.
 
 ---
+**Step-by-step instructions:**
+Step 1 — Activate the venv
+Plain Text
+cd <Your Project Directory Path> venv/bin/activate
+ 
+Step 2 — Log in to Prefect Cloud (one-time only)
+Plain Text
+prefect cloud login
+ 
+It will open a browser. Paste your API key from app.prefect.cloud → Profile → API Keys → Create API Key.
 
+Step 3 — Deploy with the 2-minute schedule
+Plain Text
+cd scriptspython ml_prefect_flow.py --serve
+
+---
 ## Quick Start (all three sub-objectives)
 
 ```bash
